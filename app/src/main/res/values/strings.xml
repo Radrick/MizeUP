@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MizeUP</string>
+    <string name="app_name">mizeup</string>
+    <string name="button_login_email">Login com email</string>
+    <string name="button_other_login">Outra forma de login</string>
+    <string name="text_field_login_email">Email</string>
+    <string name="text_field_password">Senha</string>
 </resources>
+
