@@ -4,5 +4,6 @@
     <string name="button_other_login">Outra forma de login</string>
     <string name="text_field_login_email">Email</string>
     <string name="text_field_password">Senha</string>
+    <string name="apresentation_splashscreen">Você pode gerenciar seus estudos de maneira fácil e eficiente</string>
 </resources>
 
