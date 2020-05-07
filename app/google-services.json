@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "475943870300",
+    "firebase_url": "https://mizeup-d3bc5.firebaseio.com",
+    "project_id": "mizeup-d3bc5",
+    "storage_bucket": "mizeup-d3bc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475943870300:android:d99b14cdb0b7e4e3b8ab99",
+        "android_client_info": {
+          "package_name": "br.com.mizeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475943870300-uni0hrhn9gpu8f0rrj59del4ua9n9bno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnl9C7oK21Ddd8Xn4zZrH7MCoDjtnVKt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475943870300-uni0hrhn9gpu8f0rrj59del4ua9n9bno.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "475943870300-cbcdmhnc5n14t70tosfu2auktijkcf6v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mizeup.MizeUP"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
