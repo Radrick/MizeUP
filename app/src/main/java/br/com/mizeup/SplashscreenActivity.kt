@@ -22,7 +22,7 @@ class SplashscreenActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (v.id == R.id.button_email_login) {
-            startActivity(Intent(this, EmailLoginActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         } else {
             startActivity(Intent(this, MainActivity::class.java))
         }

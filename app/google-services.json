@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "475943870300-e5p9egg9i4ct9g7m88657dg7oc307arh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.mizeup",
+            "certificate_hash": "963ad183296cc15676c1d6b2ade24012a49de7ab"
+          }
+        },
+        {
           "client_id": "475943870300-uni0hrhn9gpu8f0rrj59del4ua9n9bno.apps.googleusercontent.com",
           "client_type": 3
         }
