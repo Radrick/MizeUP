@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">mizeup</string>
-    <string name="button_login_email">Login com email</string>
-    <string name="button_other_login">Outra forma de login</string>
+    <string name="button_login_email">Login com E-mail</string>
+    <string name="button_login_google">Login com Google</string>
+    <string name="button_login_apple">Login com Apple</string>
     <string name="text_field_login_email">Email</string>
     <string name="text_field_password">Senha</string>
     <string name="apresentation_splashscreen">Você pode gerenciar seus estudos de maneira fácil e eficiente</string>
