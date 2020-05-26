@@ -22,7 +22,7 @@ class LoginFormsActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when (v) {
-            v.button_email_login -> startActivity(Intent(this, MainActivity::class.java))
+            v.button_email_login -> startActivity(Intent(this, LoginEmailActivity::class.java))
             v.button_google_login -> startActivity(Intent(this, MainActivity::class.java))
             v.button_apple_login -> startActivity(Intent(this, MainActivity::class.java))
             v.button_create_account -> startActivity(Intent(this, MainActivity::class.java))

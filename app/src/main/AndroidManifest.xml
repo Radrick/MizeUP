@@ -4,13 +4,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginFormsActivity"></activity>
-        <activity android:name=".SplashscreenActivity" android:theme="@style/AppThemeFullScreen">
+        <activity android:name=".LoginEmailActivity"></activity>
+        <activity android:name=".EmailLoginActivity" />
+        <activity android:name=".LoginFormsActivity" />
+        <activity
+            android:name=".SplashscreenActivity"
+            android:theme="@style/AppThemeFullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
