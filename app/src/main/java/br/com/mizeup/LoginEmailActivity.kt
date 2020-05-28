@@ -13,13 +13,11 @@ import kotlinx.android.synthetic.main.activity_login_email.view.*
 
 class LoginEmailActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var auth: FirebaseAuth
+    private var fbAuth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_email)
-
-        auth = FirebaseAuth.getInstance()
 
         button_login.setOnClickListener(this)
         button_forgot_password.setOnClickListener(this)
@@ -29,7 +27,7 @@ class LoginEmailActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onStart() {
         super.onStart()
-        val currentUser = auth.currentUser
+        val currentUser = fbAuth.currentUser
     }
 
     override fun onClick(v: View) {
@@ -46,28 +44,22 @@ class LoginEmailActivity : AppCompatActivity(), View.OnClickListener {
     private fun signIn(email: String, password: String) {
 
         if (validateForm(email, password)) {
-            auth.signInWithEmailAndPassword(email, password)
+            fbAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Log.d(TAG, "signInWithEmail:success")
-                        val user = auth.currentUser
+                        val user = fbAuth.currentUser
                         //Toast.makeText(this, "ok", Toast.LENGTH_LONG).show()
                         startActivity(Intent(this, MainActivity::class.java))
                     } else {
-                        // If sign in fails, display a message to the user.
                         Log.w(TAG, "signInWithEmail:failure", task.exception)
                         Toast.makeText(
                             baseContext, "Authentication failed.",
                             Toast.LENGTH_SHORT
                         ).show()
-
                     }
-
-                    // ...
                 }
         }
-
-
     }
 
     private fun validateForm(email: String, password: String): Boolean{

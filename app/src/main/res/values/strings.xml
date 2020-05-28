@@ -12,5 +12,6 @@
     <string name="text_field_password">Senha</string>
     <string name="email_invalidate">Email inválido.</string>
     <string name="empty_form">Por favor, preencha todos os campos.</string>
+    <string name="error_google_sign_in">Erro ao efetuar login com a conta google</string>
 </resources>
 
