@@ -32,6 +32,14 @@ class LoginFormsActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
+
     private fun initGoogleSignIn() {
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
@@ -85,7 +93,7 @@ class LoginFormsActivity : AppCompatActivity(), View.OnClickListener {
             v.button_email_login -> startActivity(Intent(this, LoginEmailActivity::class.java))
             v.button_google_login -> signIn()
             v.button_apple_login -> startActivity(Intent(this, MainActivity::class.java))
-            v.button_create_account -> startActivity(Intent(this, MainActivity::class.java))
+            v.button_create_account -> startActivity(Intent(this, CreateAccountActivity::class.java))
         }
     }
 

@@ -15,6 +15,8 @@ class LoginEmailActivity : AppCompatActivity(), View.OnClickListener {
 
     private var fbAuth = FirebaseAuth.getInstance()
 
+    lateinit var str: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_email)
@@ -25,18 +27,13 @@ class LoginEmailActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        val currentUser = fbAuth.currentUser
-    }
-
     override fun onClick(v: View) {
         when (v) {
             v.button_login -> signIn(
                 text_login_email.text.toString(),
                 text_login_password.text.toString()
             )
-            v.button_forgot_password -> Toast.makeText(this, "dev", Toast.LENGTH_SHORT).show()
+            v.button_forgot_password -> Toast.makeText(this, "Tratar esse bunton", Toast.LENGTH_SHORT).show()
             v.button_other_login -> startActivity(Intent(this, LoginFormsActivity::class.java))
         }
     }
@@ -48,8 +45,7 @@ class LoginEmailActivity : AppCompatActivity(), View.OnClickListener {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Log.d(TAG, "signInWithEmail:success")
-                        val user = fbAuth.currentUser
-                        //Toast.makeText(this, "ok", Toast.LENGTH_LONG).show()
+                        //val user = fbAuth.currentUser
                         startActivity(Intent(this, MainActivity::class.java))
                     } else {
                         Log.w(TAG, "signInWithEmail:failure", task.exception)
@@ -63,9 +59,7 @@ class LoginEmailActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun validateForm(email: String, password: String): Boolean{
-
         var valid = true
-
         if (email.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, R.string.empty_form, Toast.LENGTH_LONG).show()
             valid = false

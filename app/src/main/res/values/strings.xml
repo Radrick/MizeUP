@@ -5,13 +5,15 @@
     <string name="button_login_google">Login com Google</string>
     <string name="button_login_apple">Login com Apple</string>
     <string name="create_account">Crie sua conta!</string>
-    <string name="forgot_password">Esqueci minha senha</string>
-    <string name="login">Logar</string>
-    <string name="other_login">Outra forma de login</string>
-    <string name="text_field_login_email">Email</string>
-    <string name="text_field_password">Senha</string>
+    <string name="email">Email</string>
     <string name="email_invalidate">Email inválido.</string>
     <string name="empty_form">Por favor, preencha todos os campos.</string>
     <string name="error_google_sign_in">Erro ao efetuar login com a conta google</string>
+    <string name="forgot_password">Esqueci minha senha</string>
+    <string name="login">Logar</string>
+    <string name="name">Nome</string>
+    <string name="other_login">Outra forma de login</string>
+    <string name="password">Senha</string>
+    <string name="surname">Sobrenome</string>
 </resources>
 
