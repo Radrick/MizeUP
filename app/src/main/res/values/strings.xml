@@ -14,6 +14,8 @@
     <string name="name">Nome</string>
     <string name="other_login">Outra forma de login</string>
     <string name="password">Senha</string>
+    <string name="password_length">Digite uma senha com mais de 8 caracteres</string>
+    <string name="signout">Sair</string>
     <string name="surname">Sobrenome</string>
 </resources>
 

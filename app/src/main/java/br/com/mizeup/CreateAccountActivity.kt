@@ -29,9 +29,6 @@ class CreateAccountActivity : AppCompatActivity() {
         }
     }
 
-   /* override fun onClick(v: View?) {
-    }*/
-
     private fun createAccount(name: String, surname: String, email: String, password: String) {
 
         if (validateForm(name, surname, email, password)) {
@@ -51,11 +48,14 @@ class CreateAccountActivity : AppCompatActivity() {
     private fun validateForm(name: String, surname: String, email: String, password: String): Boolean {
         var valid = true
 
-        if (name.isEmpty()  || surname.isEmpty()  || email.isEmpty() || password.isBlank()){
-            Toast.makeText(this, R.string.empty_form, Toast.LENGTH_LONG)
+        if (name.isEmpty()  || surname.isEmpty()  || email.isEmpty() || password.isEmpty()){
+            Toast.makeText(this, R.string.empty_form, Toast.LENGTH_LONG).show()
             valid = false
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             Toast.makeText(this, R.string.email_invalidate, Toast.LENGTH_LONG).show()
+            valid = false
+        } else if (password.length < 8){
+            Toast.makeText(this, R.string.password_length, Toast.LENGTH_LONG).show()
             valid = false
         }
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".LoginEmailActivity">
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/image_backend"
         android:layout_width="match_parent"
         android:layout_height="670dp"
@@ -27,21 +27,27 @@
         android:src="@drawable/mizeup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <include
+        android:id="@+id/image"
+        layout="@layout/base_image"
+         />
 
     <EditText
         android:id="@+id/text_login_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.43"
         android:layout_marginEnd="24dp"
         android:hint="@string/email"
         android:padding="16dp"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_image"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/text_login_password"
