@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/logo_image"
-        layout="@layout/base_image"/>
+        layout="@layout/layout_image"/>
 
     <EditText
         android:id="@+id/tField_name_create_account"

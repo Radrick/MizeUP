@@ -5,6 +5,7 @@
     <string name="button_login_google">Login com Google</string>
     <string name="button_login_apple">Login com Apple</string>
     <string name="create_account">Crie sua conta!</string>
+    <string name="new_create_account">Criar conta</string>
     <string name="email">Email</string>
     <string name="email_invalidate">Email inválido.</string>
     <string name="empty_form">Por favor, preencha todos os campos.</string>
@@ -15,7 +16,16 @@
     <string name="other_login">Outra forma de login</string>
     <string name="password">Senha</string>
     <string name="password_length">Digite uma senha com mais de 8 caracteres</string>
+    <string name="select_objetive">Selecione um objetivo</string>
     <string name="signout">Sair</string>
     <string name="surname">Sobrenome</string>
+    <string name="head_objective">Ótimo! Agora precisamos saber um pouco sobre você.</string>
+    <string name="scape_onboarding">Pular tudo</string>
+    <string name="description_objective">O MizeuUP quer que você se planeje nos seus estudo para alcançar seus objetivos.
+        \n\nNós sugerimos um plano de estudos adequado com sua disponibilidade, prioridade e objetivo.
+        \n\nPara isso, pedimos a você, que preencha seu perfil completamente.\n\nVocê pode selecionar mais de um objetivo.</string>
+    <string name="next">Próximo</string>
+    <string name="especify_an_objective">especifique um objetivo</string>
+    <string name="choose_an_option">escolha uma opção</string>
 </resources>
 

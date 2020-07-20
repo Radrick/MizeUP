@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObjectiveOnBoardingActivity">
+
+    <include
+        android:id="@+id/layout_objective_background"
+        layout="@layout/layout_background_image" />
+
+    <Button
+        android:id="@+id/btn_scape_onboarding"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp"
+        android:hint="@string/scape_onboarding"
+        android:textColorHint="@color/colorBlue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/head_objective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp"
+        android:text="@string/head_objective"
+        android:textAlignment="textStart"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descripton_objective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:justificationMode="inter_word"
+        android:text="@string/description_objective"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_objective" />
+
+    <TextView
+        android:id="@+id/textView_whats_objective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Qual seu objetivo?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/descripton_objective"
+        app:layout_constraintTop_toBottomOf="@id/descripton_objective" />
+
+    <RadioGroup
+        android:id="@+id/group_rButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textView_whats_objective"
+        app:layout_constraintTop_toBottomOf="@id/textView_whats_objective">
+
+        <RadioButton
+            android:id="@+id/rButton_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:text="School"
+            app:layout_constraintStart_toStartOf="@id/textView_whats_objective"
+            app:layout_constraintTop_toBottomOf="@id/textView_whats_objective" />
+
+        <RadioButton
+            android:id="@+id/rButton_university"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University"
+            app:layout_constraintStart_toStartOf="@id/textView_whats_objective"
+            app:layout_constraintTop_toBottomOf="@id/rButton_school" />
+
+        <RadioButton
+            android:id="@+id/rButton_concourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concourse"
+            app:layout_constraintStart_toStartOf="@id/textView_whats_objective"
+            app:layout_constraintTop_toBottomOf="@id/rButton_university" />
+
+        <RadioButton
+            android:id="@+id/rButton_language_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language Course"
+            app:layout_constraintStart_toStartOf="@id/textView_whats_objective"
+            app:layout_constraintTop_toBottomOf="@id/rButton_concourse" />
+
+        <RadioButton
+            android:id="@+id/rButton_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            app:layout_constraintStart_toStartOf="@id/textView_whats_objective"
+            app:layout_constraintTop_toBottomOf="@id/rButton_language_course" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/fText_description_other_objective"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Então, qual seu objetivo?"
+        app:layout_constraintStart_toStartOf="@+id/group_rButton"
+        app:layout_constraintTop_toBottomOf="@id/group_rButton" />
+    <TextView
+        android:id="@+id/tField_other_objective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fText_description_other_objective"
+        app:layout_constraintStart_toStartOf="@+id/fText_description_other_objective"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_next_objective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/colorBlue"
+        android:contentDescription="@string/next"
+        android:src="@drawable/ic_btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

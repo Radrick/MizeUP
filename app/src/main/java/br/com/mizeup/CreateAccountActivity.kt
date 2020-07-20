@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
-import android.view.View
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_created_account.*
 
@@ -25,7 +25,8 @@ class CreateAccountActivity : AppCompatActivity() {
             var email = tField_email_create_account.text.toString()
             var password = tField_password_create_account.text.toString()
 
-            createAccount(name, surname, email, password)
+
+          createAccount(name, surname, email, password)
         }
     }
 
@@ -36,7 +37,7 @@ class CreateAccountActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "createUserWithEmail:success")
                     Toast.makeText(this, "Usuário criado com sucesso", Toast.LENGTH_LONG)
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, ObjectiveOnBoardingActivity::class.java))
                 } else {
                     Log.d(TAG, "createUserWithEmail:failure", task.exception)
                     Toast.makeText(this, "Authentication failed.", Toast.LENGTH_LONG).show()

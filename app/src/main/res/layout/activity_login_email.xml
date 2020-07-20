@@ -6,32 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".LoginEmailActivity">
 
-    <!--<ImageView
-        android:id="@+id/image_backend"
-        android:layout_width="match_parent"
-        android:layout_height="670dp"
-        android:layout_marginLeft="-90dp"
-        android:alpha="0.08"
-        android:src="@drawable/logo_half_gray"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/login_image"
-        android:layout_width="370dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:src="@drawable/mizeup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
-
     <include
         android:id="@+id/image"
-        layout="@layout/base_image"
+        layout="@layout/layout_image"
          />
 
     <EditText
