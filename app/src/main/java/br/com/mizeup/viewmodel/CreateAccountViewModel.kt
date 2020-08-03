@@ -23,8 +23,10 @@ class CreateAccountViewModel(application: Application) : AndroidViewModel(applic
 
     fun save(name: String, surname: String, email: String, password: String) {
         fbAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
+
             if (task.isSuccessful) {
-                val user = UserModel(name, surname, email)
+                var id = fbAuth.currentUser!!.uid
+                val user = UserModel(id, name, surname, email)
                 mCreateUser.value = mUserRepository.save(user)
             } else {
                 mCreateUser.value = false

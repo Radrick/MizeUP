@@ -7,7 +7,8 @@ class DataBaseConstants private constructor(){
     object USER{
         const val TABLE_NAME = "User"
 
-        object COLUMNS : BaseColumns {
+        object COLUMNS {
+            const val ID = "id"
             const val NAME = "name"
             const val SURNAME = "surname"
             const val EMAIL = "email"

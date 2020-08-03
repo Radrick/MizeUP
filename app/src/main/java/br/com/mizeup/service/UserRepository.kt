@@ -15,15 +15,12 @@ class UserRepository(context: Context) {
         return try {
             val db = mDataBaseHelper.writableDatabase
             val contentValue = ContentValues().apply {
+                put(DataBaseConstants.USER.COLUMNS.ID, user.id)
                 put(DataBaseConstants.USER.COLUMNS.NAME, user.name)
                 put(DataBaseConstants.USER.COLUMNS.SURNAME, user.surname)
                 put(DataBaseConstants.USER.COLUMNS.EMAIL, user.email)
             }
 
-
-//            contentValue.put(DataBaseConstants.USER.COLUMNS.NAME, user.name)
-//            contentValue.put(DataBaseConstants.USER.COLUMNS.SURNAME, user.surname)
-//            contentValue.put(DataBaseConstants.USER.COLUMNS.EMAIL, user.email)
             db.insert(DataBaseConstants.USER.TABLE_NAME,null, contentValue)
             db.close()
             true
