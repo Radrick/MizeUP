@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ObjectiveOnBoardingActivity">
+        <activity android:name=".view.ObjectiveOnBoardingActivity">
 
 
 
         </activity>
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".LoginEmailActivity" />
-        <activity android:name=".LoginFormsActivity" />
+        <activity android:name=".view.CreateAccountActivity" />
+        <activity android:name=".view.LoginEmailActivity" />
+        <activity android:name=".view.LoginFormsActivity" />
         <activity
             android:name=".view.SplashscreenActivity"
             android:theme="@style/AppThemeFullScreen">
@@ -27,7 +27,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".view.MainActivity" />
     </application>
 
 </manifest>

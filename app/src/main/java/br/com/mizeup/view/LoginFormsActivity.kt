@@ -1,10 +1,11 @@
-package br.com.mizeup
+package br.com.mizeup.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import br.com.mizeup.R
 import com.google.android.gms.auth.api.Auth
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -51,7 +52,9 @@ class LoginFormsActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun signIn(){
         val signInIntent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient)
-        startActivityForResult(signInIntent, RC_GOOGLE_SIGN_IN )
+        startActivityForResult(signInIntent,
+            RC_GOOGLE_SIGN_IN
+        )
     }
 
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

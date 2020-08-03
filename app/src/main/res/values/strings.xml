@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Mizeup</string>
     <string name="apresentation_splashscreen">Você pode gerenciar seus estudos de maneira fácil e eficiente.</string>
-    <string name="button_login_email">Login com E-mail</string>
-    <string name="button_login_google">Login com Google</string>
-    <string name="button_login_apple">Login com Apple</string>
+    <string name="button_login_email">Entrar com E-mail</string>
+    <string name="button_login_google">Entrar com Google</string>
+    <string name="button_login_apple">Entrar com Apple</string>
     <string name="create_account">Crie sua conta!</string>
     <string name="new_create_account">Criar conta</string>
     <string name="email">Email</string>

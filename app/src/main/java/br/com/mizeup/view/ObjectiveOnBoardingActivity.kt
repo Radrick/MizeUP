@@ -1,10 +1,11 @@
-package br.com.mizeup
+package br.com.mizeup.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import br.com.mizeup.R
 import br.com.mizeup.model.ObjectiveModel
 import kotlinx.android.synthetic.main.activity_objective_on_boarding.*
 
@@ -23,11 +24,11 @@ class ObjectiveOnBoardingActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when (v.id) {
             R.id.btn_scape_onboarding -> startActivity(Intent(this, MainActivity::class.java))
-            R.id.btn_next_objective -> onCheckObjective(v)
+            R.id.btn_next_objective -> onCheckObjective()
         }
     }
 
-    private fun onCheckObjective(view: View) {
+    private fun onCheckObjective(){ //view: View) {
 
         var other_objective = fText_description_other_objective.text.toString()
 
